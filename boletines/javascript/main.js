@@ -86,7 +86,7 @@ links.forEach(function(link){
         //setInterval -->después de cierto tiempo constantemente.
         setTimeout(function(){
             //Moverse entre documentos-Redirenccion de página.
-            location.href = "/";     
+            location.href = "/boletines";     
         },600/*Tiempo(600 milisegundos)*/);
 
 
