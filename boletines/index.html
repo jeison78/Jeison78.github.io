@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"><!-- lleva el nombre de está propiedad porque altera el viewport(mirador) de la página -->
+    <title>Las mejores pizzas de mi ciudad</title>
+    <!-- rel: -> este atributo sirve para definir la relacion entre el documento que estamos linkeando y nuestro documento desde el que estamos importando o referenciando el documento externo css   -->
+    <!-- Con el link copiado en "href=" podre normalizar mi pagina web para diferentes dispositivos -->
+    <!-- oh tambien se puede guardar el enlace en la carpeta css para que así podamos importarlo a la pagina web -->
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/animate.css"><!--Link erroneo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+   <div class="container ">
+    <div class="content animated fadeInDown"> 
+        <header>
+            <h1 class="title">Las mejores pizzas de mi ciudad</h1>
+        </header>
+        <table class="table">
+            <!-- "<thead>" y "tbody" : ->definen el encabezado y el cuerpo de nuestra tabla -->
+                <!--"<thead>" : ->colocamos los descriptores de nuestras columnas -->
+                <!-- "<tbody>" : -> se coloca las seldas con los datos a mostrar -->
+            <thead>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Calificación</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr> <!--filas-->
+                    <td>1</td> <!--seldas que siempre deben ir dentro de una fila (etiqueta <tr>)-->
+                    <td>Sensei</td> 
+                    <td>Av Central 500</td> 
+                    <!-- <td><i class="fa fa-star fa-spin" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> para hacer girar un icono, agregar a la class "fa-spin" -->
+                    <td><i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <!--para hacer girar un icono, agregar a la class "fa-spin"-->
+                        <i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i></td> 
+                    <td>
+                        <a href="./restaurantes/sensei.html">Ver más</a>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>2</td> <!--seldas que siempre deben ir dentro de una fila (etiqueta <tr>)-->
+                    <td>Pepe's Pizza</td> 
+                    <td>Av Central 500</td> 
+                    <td><i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star-o " aria-hidden="true"></i>
+                    <td>
+                        <a href="./restaurantes/sensei.html">Ver más</a>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>3</td> <!--seldas que siempre deben ir dentro de una fila (etiqueta <tr>)-->
+                    <td>La Calabaza</td> 
+                    <td>Av Central 500</td> 
+                    <td><i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star " aria-hidden="true"></i>
+                        <i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star-o " aria-hidden="true"></i>
+                        <i class="fa fa-star-o " aria-hidden="true"></i></td> 
+                    <td></td> 
+                </tr>
+                <tr>
+                    <td>4</td> <!--seldas que siempre deben ir dentro de una fila (etiqueta <tr>)-->
+                    <td>El Chocax</td> 
+                    <td>Av petituar 265</td> 
+                    <td>
+                        <i class="fa fa-star " aria-hidden="true"></i><i class="fa fa-star " aria-hidden="true"></i>                         
+                        <i class="fa fa-star-o " aria-hidden="true"></i><i class="fa fa-star-o " aria-hidden="true"></i>                         
+                        <i class="fa fa-star-o " aria-hidden="true"></i></td>                       
+                    <td></td> 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </div> 
+   <!-- Aquí va el elemeento JavaScript antes de que cierre el body -->
+   <script src="./javascript/main.js"></script> 
+    <!--console.log("Hola mundo desde  JavaScript") /*Imprime el texto  en la consola del navegador -->
+</body>
+</html>
+<!-- Investigar : crawlers, arañas, los scraper -->

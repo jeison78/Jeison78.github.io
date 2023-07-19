@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- lleva el nombre de está propiedad porque altera el viewport(mirador) de la página, "initial-scale"-> para que no haga zom -->
+    <title>Las mejores pizzas de mi ciudad</title>
+    <!-- rel: -> este atributo sirve para definir la relacion entre el documento que estamos linkeando y nuestro documento desde el que estamos importando o referenciando el documento externo css   -->
+    <!-- Con el link copiado en "href=" podre normalizar mi pagina web para diferentes dispositivos -->
+    <!-- oh tambien se puede guardar el enlace en la carpeta css para que así podamos importarlo a la pagina web -->
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link  class="icon" rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+   <div class="container">
+    <div class="content animated fadeInDown ">
+        <div class="actions">
+            <a href="../" class="close"> <!--aquí hay otro metodo de regresar a la página anterior usando ("../")-->
+                <span>X</span>
+            </a>
+        </div>
+        <header>
+            <h2 class="title-item">
+                <span class="position">1</span> <!--<span>:->es muy parecido al elemento div, su diferencia es que e no hace salto de linea(se coloca en el misma linea que el resto del contenido ) -->
+                Sensei
+            </h2>
+        </header>
+        <section>
+            <img src="../images/sensei.jpg"  class="main-image" alt="Deliciosos Hot Cakes"> <!--en "alt=":se debe colocar un texto que describa la imagen para aquellos que no puedan ver la imagen-->
+            <div class="text">
+                <address class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Av Central 500
+                </address>
+                <!-- Lorem ipsum : es una utilidad en diseño web que se utiliza para colocar texto para luego sea remplazado (sirve para ver como se ve el contenido )-> -->
+                <p class="paragraph"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium, iste aspernatur harum corrupti sunt corporis velit perspiciatis recusandae magnam adipisci sit architecto, deserunt quos repellat ullam? Mollitia, quaerat impedit.</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium, iste aspernatur harum corrupti sunt corporis velit perspiciatis recusandae magnam adipisci sit architecto, deserunt quos repellat ullam? Mollitia, quaerat impedit.</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium, iste aspernatur harum corrupti sunt corporis velit perspiciatis recusandae magnam adipisci sit architecto, deserunt quos repellat ullam? Mollitia, quaerat impedit.</p>
+            </div>
+        </section>
+    </div>
+   </div> 
+   <script src="../javascript/main.js"> </script>
+</body>
+</html>
+<!-- Investigar : crawlers, arañas, los scraper -->

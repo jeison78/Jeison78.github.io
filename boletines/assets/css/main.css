@@ -1,0 +1,228 @@
+/* Normalizadores de css */
+/* https://necolas.github.io/normalize.css/7.0.0/normalize.css */
+
+ /* Ejem #01 
+ selector{
+        /* Aquí se definen las propiedades */
+        /* propiedad: valor; */
+        /* }   */ 
+
+/* Selector de etiqueta */
+/* p{
+    /* Aquí se definen las propiedades */
+    /* color: red; */
+/* } */
+ /* Selector de class */
+/*.div{
+    background-color: green;
+    }*/
+/* Selector  de ID
+#rule{
+    color: #333;
+} */
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+a{
+    text-decoration: none; /*subrayado del texto-quitar subrayado con (none)*/
+    color: #2850c7; /*Color de texto*/
+}
+
+/*solucionar el tema de las imagenes cuando se desborda de la página web*/
+img{
+    max-width: 100%;
+
+}
+.paragraph{
+    line-height: 1.8em; /*Espaciar texto*/
+    font-weight:200; /*Fuente delgada(texto)*/
+}
+
+.fa-star,.fa-star-o{
+    color: #ffc400;
+}
+
+/*estado haver(juper) */
+a:hover{
+    opacity: 0.8; /*Reducir la opacidad de los links cuado el mouse sobre el elemento (0.9 - 0.1)*/   
+}
+/*estado active*/ /*Comunmente se usa en botones y en links*/
+a:active{ 
+    background: red; /*Se activa cuando el usuario activa el botón.*/
+}
+/*Estado focus*/
+/* a:focus{
+    background: red;
+} */
+
+.title{
+    text-transform: uppercase;/*uppercase:mayusculas, capitalize:la primera letra de los titulos en mayuscula, */
+    text-align: center;/*centrae el texto*/
+}
+
+.container{
+    background: #2850c7; /*Respaldo */
+    background: -webkit-linear-gradient(to right, #0575e6, #021b79); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575e6, #021b79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /*1oovh: -->representa el alto total de la pantalla*/
+    display: flex;
+    align-items: center; /*Para alinear el contenido al centro*/
+    justify-content: center;
+}
+.content{
+    max-width: 960px;/*Que no se pase de los 960px de ancho*/
+    max-height: 500px;/*Que no se pase de los 500px de alto*/
+    /*width: 100%;/*que ocupe el 100% de la pantalla (ancho)*/
+    /*height: 100%;/*Que ocupe el 100% de la pantalla (alto)*/
+    width: 100%;
+    height: 80vh; /*funciona como porcentaje, equivale a ocupar el 80% de la altura visible de la pantalla.*/
+    background-color: white;
+    /*box-shandow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative; /*para que se pueda hacer los cambios de manera manueal*/
+    /*padding: 1.8em; /*Espacio en los vordes */
+    overflow: scroll;/*define como se comporta el contenido que se sale de las dimensiones del elemto. "scroll"-->esconderlo dentro del elemento y desplazarse*/
+    overflow-x: hidden; /*Para que no se desplaze a la derecha*/     
+}
+/*Ocultar la barra de desplazamiento de scroll*/
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+.content{
+    padding:1em;
+}
+/*Romper la tabla*/
+td{
+    display: block;/*transformar las columnas en filas*/
+    width: 100%; /*ancho de la tablla*/
+}
+/*Seleccionar el primer td de cada una de las filas de la tabla y modificarlas*/
+/*Usar una seudoclase sobre td*//*Seudo clase (etiqueta:seudoclase))*/
+td:nth-of-type(1){
+    font-size: 1.5em;/*fuente del texto-tamaño*/
+    font-weight: bold;/*fuente del texto en negrita*/
+    color: #059ce8;
+}
+th{
+    display: none;/*ocultar los emcabezados de la tabla*/
+}
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #051c60;
+    display: inline;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);/*Sombreado*/
+    font-weight: 300; /* fuente mas delgada*/
+    cursor: pointer; /*para que cambie a un dedo*/
+    display: flex; /*Para centrarlo vertical como horizontal*/
+    align-items: center; /*Para centrarlo vertical como horizontal*/
+    justify-content: center; /*Para centrarlo vertical como horizontal*/
+    
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;/*para que no haya espacios entre las tablas*/
+}
+
+/* 
+td{
+    border: solid 1px; /*para que note la tabla
+} */
+
+.table td, table th{  /*con una coma podemos especificar mas de un selector*/
+    padding: 1em; /*aumentar de ancho a la tabla*/
+    text-align: left;/*alinear el texto hacia la izquierda*/
+}
+
+.table tr:nth-child(even){background-color: #e5e8f5;}/*nth-child(): ->seudo clase que nos permite seleccionar los hijos de un padre(pares e impares de una tabla). Tambien podemos usar even(2) o odd(1) en ves de 1(impar) o 2(par)*/
+
+.title-item{
+    /* border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #c642c6; */
+    font-size: 2em;
+    border-bottom: #051c60 solid 2px ; /*Son Llamados "Shorthand Properties" (union de todos los valores) */
+    padding-bottom: 1em;
+}
+
+.address{
+    font-weight: bold;/*texto en negrita*/
+    color: #051c60;/*Color de la letra*/
+    font-size: 1.2em; /*Tamaño del texto*/
+    margin-top: 2em; /*agregar un espacio en la direción*/
+    margin-top: 1em;
+    display: inline-block;/*separar el texto de la imagen*/
+}
+
+.main-image{
+    float: left; /*hace que el texto fluya hacia la  derecha de la imagen */
+    margin-right: 1em; /*espaciar el texto de la imagen (a la derecha)*/
+    height: 250px;/*Ancho de la imagen*/
+    
+}
+
+.position{
+    background-color: #1f7ecd;
+    color: white;
+    padding: 0.5em;
+    /*padding: 1em 1em 1em 1em; /*(Espacio)arriba/derecha/abajo/izquierda*/
+    /* Otra forma */
+    /*padding: 10px;*/
+    /*Esquinas del elemento*/
+    /*border-top-left-radius: 2em; /*Esquina arriba izquieda*/
+    /*border-top-right-radius: 2em; /*Esquina arrinba derecha*/
+    /*border-bottom-left-radius:  2em; /*Esquina abajo izquierda*/
+    /*border-bottom-right-radius: 2em; /*Esquina abajo derecha*/
+    /* Otra forma */
+    border-radius: 4px; /*Para que las esquinas no se vean punteagudas*/
+    margin-right: 0.5em;
+}
+/*Media Query*//*especifica una serie de propiedades solo si cumple las condicionales*/
+@media (min-width:900px){
+    th{
+        display: table-cell;/*Esto hace regresar a nuestros elementos como estanan antes pero no centrados*/
+    }
+    td{
+        width: auto;/*centra todos los elementos como estabam antes.*/
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+        .content{
+            padding: 1.8em;
+        }
+    }
+        
+    }
+    /*Romper la tabla*/
+    /*td{
+        display: block;/*transformar las columnas en filas*/
+    /*    width: 100%; /*ancho de la tablla*/
+    /*}
+    /*Seleccionar el primer td de cada una de las filas de la tabla y modificarlas*/
+    /*Usar una seudoclase sobre td*//*Seudo clase (etiqueta:seudoclase))*/
+    /*td:nth-of-type(1){
+        font-size: 1.5em;/*fuente del texto-tamaño*/
+    /*    font-weight: bold;/*fuente del texto en negrita*/
+    /*   color: #059ce8;
+    }
+    th{
+        display: none;/*ocultar los emcabezados de la tabla*/
+    /*}*/
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
