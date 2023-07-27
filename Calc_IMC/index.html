@@ -1,0 +1,59 @@
+<!--@codewithcurious.com-->
+<!DOCTYPE html> 
+<html  lang= "en" > 
+<head> 
+  <meta  charset= "UTF-8" > 
+  <meta  name= "viewport"  content= "width=device-width, initial-scale=1.0" > 
+  <title> Calculadora de IMC </title>
+  <style>
+    @media (max-width:900px){
+    
+      .container{
+        overflow-x: hidden;
+        height:  75%;
+        
+      }
+      #title{      
+        width: 320px;
+      }
+      .input-container{
+        display: inline-block;
+        text-align: center;
+        
+        
+      }
+      
+        
+      #button{
+        margin-left: 85mm;
+      }
+    }
+  </style> 
+</head> 
+<body> 
+  <div class= "container" style="background-color: blanchedalmond;width: 100%; height: 425px; margin-top: 125px; display: inline-block; overflow-y: auto; text-align: center ; "> 
+
+    <h1 style="text-align: center; font-size: 3em; color: brown;" id="title"> Calculadora de IMC </h1> 
+    <div  style="text-align: center;font-size: 6dvh; min-height: 15px;" class= "input-container" > 
+      <label  for= "height">Altura: </label> 
+      <input style="font-size: 4dvh; width: 200px;" type= "number"  id= "height"  placeholder= "Altura (cm)" ><!--type: "number" -> para seleccionar el numero con barras de aumento, con type elijes que tipo de modelo de imput usaras--> 
+    </div> 
+    <div style="text-align: center; margin-top: 5px; font-size: 6dvh;" class= "input-container" > 
+      <label style="padding-left: 7mm" for= "weight" > Peso:</label> <!--chequea este padding 12mm  mueve al elemento a la izquieda -->
+      <input style="font-size: 4dvh; width: 200px;" type= "number"  id= "weight"  placeholder= "Peso (kg)" > 
+    </div> 
+    <!--padding-right: mueve el elemento segun la distancia deseada-->
+    <div style="display: flex;justify-content: center;padding-right: 25em ; margin-top: 20px;">
+      <button style="font-size: 5dvh;" id="button" onclick= "calculateBMI()" > Calcular </button> 
+    </div>
+    <!--margin-line-start: ->mueve el elemento hacia la derecha -->
+    <div style=" margin-top: 20px; ; display: inline-block; min-width: 140px; width: 90%;">    
+      <!-- text-overflow: ellipsis; ->determina con el contenido que se desvorda y que no es mostrado, puede ser cortado mostrando una elipsis (...) -->
+      <!-- conteneditable="false" -> para que no se pueda editar el contenedor -->
+      <div style="font-size: 4dvh; width: 100%; background-color: white;  margin: 0px auto; max-width: 550px; text-align: left; "  contenteditable="true"  id="result"></div>      
+    </div> 
+  </div>
+
+  <script src= "main.js" ></script> 
+</body> 
+</html>
