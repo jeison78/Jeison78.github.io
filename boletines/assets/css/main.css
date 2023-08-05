@@ -124,7 +124,7 @@ th{
     display: inline;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);/*Sombreado*/
     font-weight: 300; /* fuente mas delgada*/
-    cursor: pointer; /*para que cambie a un dedo*/
+    cursor: pointer; /*para que cambie el puntero */
     display: flex; /*Para centrarlo vertical como horizontal*/
     align-items: center; /*Para centrarlo vertical como horizontal*/
     justify-content: center; /*Para centrarlo vertical como horizontal*/
