@@ -61,7 +61,7 @@ function mostrarSecciones() {
 
 function obtenerPlatillos() {
     // const url = 'http://localhost:4000/platillos';
-    const url ='https://gist.githubusercontent.com/jeison78/ab54661d17ecf027819004e704565b3b/raw/1230f4f103c8d426afa6b213991bcf750626d07d/db.json';
+    const url ='https://gist.githubusercontent.com/jeison78/ab54661d17ecf027819004e704565b3b/raw/4dadf5872c12e033c753846a19da426da1c8d822/API-platillos&clientes';
 
     fetch(url)
         .then(respuesta => respuesta.json())
